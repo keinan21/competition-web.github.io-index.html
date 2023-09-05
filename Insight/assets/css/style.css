@@ -1,0 +1,404 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Ubuntu" sans-serif;
+}
+
+/*sidebar*/
+
+
+#sidebar {
+  margin: -1px;
+  width: 250px;
+  background: #282828;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: -190px;
+  transition: left 0.5s ease;
+  display: inline-flex;
+  z-index: 1;
+}
+
+#sidebar.mobile {
+  left: -240px;
+  transition: left 0.5s ease;
+}
+
+#sidebar.visible{
+  left: 0px;
+  margin-left: 0px;
+  transition: left 0.5s ease;
+}
+
+#sidebar.mobile ul{
+  margin-right: 5px;
+}
+
+.sidebar {
+  width: 245px;
+  background-color: #ffffff;
+  padding-top: 35px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-right: 1px solid rgb(var(--ig-separator));
+  display: list-item;
+  flex-direction: column;
+}
+
+
+.sidebar-menu {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0 5px 20px 8px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.sidebar-menu.bottom {
+  flex-grow: 0;
+  margin-bottom: 40px;
+  
+}
+
+.sidebar-menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu li a.nav-link {
+  border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+.sidebar-menu li a.nav-link.active {
+  font-weight: bold;
+}
+
+.sidebar-menu li a.nav-link.active span.icon {
+  border: 2px solid black;
+  margin-left: 90px;
+  }
+
+.sidebar-menu li a.nav-link .icon {
+  margin-right: 15px;
+  margin-left: 20px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar-menu li a.nav-link:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.sidebar-menu li a.nav-link:hover .icon {
+  transform: scale(1.08);
+}
+
+.rounded-circle {
+  border-radius: 100%;
+}
+
+
+
+
+/*konten*/
+#konten{
+  margin-left: 74px;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+#konten.mobile{
+  margin-left: 14px;
+  margin-right: 6px;
+}
+
+/*hero*/
+
+.hero{
+  background: linear-gradient(272deg,#833ab4,#fd1d1d,#fcb045);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  border-radius: 1.5rem;
+}
+
+.hero p{
+  font-size: 3rem;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title h1{
+  font-size: 100px;
+  color: white;
+  padding-top: 10px;
+}
+.title h2{
+  font-size: 20px;
+}
+
+.hrmain{
+  width: 35vw;
+  border-width: 5px;
+  margin-left: 23vw;
+  color: white;
+  opacity: 100%;
+  border-radius: 1rem;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.hrsecond{
+  width: 50vw;
+  border-width: 5px;
+  margin-left: 4vw;
+  color: white;
+  opacity: 100%;
+  border-radius: 1rem;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.btn-21,
+.btn-21 *,
+.btn-21 :after,
+.btn-21 :before,
+.btn-21:after,
+.btn-21:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-21 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-21:disabled {
+  cursor: default;
+}
+.btn-21:-moz-focusring {
+  outline: auto;
+}
+.btn-21 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-21 [hidden] {
+  display: none;
+}
+.btn-21 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-21 span {
+  mix-blend-mode: difference;
+}
+.btn-21:before {
+  -webkit-animation: move-out 0.3s;
+  animation: move-out 0.3s;
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+.btn-21:hover:before {
+  -webkit-animation: move-in 0.3s forwards;
+  animation: move-in 0.3s forwards;
+}
+@-webkit-keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+
+/*hero illustration*/
+
+.glass{
+  width: 40vw;
+  height: 50vh;
+  max-width: 400px;
+  border-top: 2px solid rgba(255,255,255,0.4);
+  border-left: 2px solid rgba(255,255,255,0.4);
+  outline: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 8px 8px 32px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,.2);
+  border-radius: 2rem;
+  backdrop-filter: blur(5px);
+  margin: auto;
+}
+
+.glass img{
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+/*kawan*/
+
+
+.kawan hr{
+  opacity: 100;
+  background: linear-gradient(272deg,#833ab4,#fd1d1d,#fcb045);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  height:10px;
+  border-radius: 2rem;
+  width: 40vw;
+  margin: 40px auto;
+}
+
+.kawan p{
+  padding: 0 10vh;
+}
+
+/*fitur*/
+.fitur span{
+  height: 10px;
+  border-radius: 2rem;
+  background: linear-gradient(272deg,#833ab4,#fd1d1d,#fcb045);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  width: 30vw;
+}
+
+.kartu{
+  border-radius: 3rem;
+  margin:auto
+}
+
+.kartu img{
+  max-height: 300px;
+}
+
+/*quote*/
+
+blockquote {
+  position: relative;
+  margin: 80px auto;
+  width: 80vw;
+  font-size: 48px;
+  line-height: 56px;
+  padding-left: 40px;
+  border-left: 2px solid #fff;
+  color: #fff;
+}
+
+blockquote span {
+  display: block;
+  text-align: right;
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+blockquote.tweet-this:hover p {
+	opacity: 0.5;
+	transition: opacity 0.2s ease;
+}
+
+blockquote.tweet-this .tweet-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -36px;
+  transition: all 0.2s ease;
+}
+
+/*addition*/
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.05);
+}

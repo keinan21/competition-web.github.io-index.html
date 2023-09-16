@@ -32,6 +32,21 @@ body {
 #sidebar.mobile {
   left: -240px;
   transition: left 0.5s ease;
+  animation: geser 10s infinite ease;
+}
+@keyframes geser {
+  0% {
+    left: -240px;
+  }
+  90% {
+    left: -240px;
+  }
+  95% {
+    left: -190px;
+  }
+  100% {
+    left: -240px;
+  }
 }
 
 #sidebar.visible{

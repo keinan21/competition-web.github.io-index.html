@@ -32,21 +32,6 @@ body {
 #sidebar.mobile {
   left: -240px;
   transition: left 0.5s ease;
-  animation: geser 10s infinite ease;
-}
-@keyframes geser {
-  0% {
-    left: -240px;
-  }
-  90% {
-    left: -240px;
-  }
-  95% {
-    left: -190px;
-  }
-  100% {
-    left: -240px;
-  }
 }
 
 #sidebar.visible{
@@ -163,7 +148,30 @@ body {
   border-radius: 100%;
 }
 
+#tanda{
+  position: fixed;
+  top: 250px;
+  left: -41px;
+}
 
+#tanda.mobile{
+  animation: geser 10s infinite ease;
+}
+
+@keyframes geser {
+  0% {
+    left:-41px;
+  }
+  90% {
+    left: -41px;
+  }
+  95% {
+    left: 40px;
+  }
+  100% {
+    left: -41px;
+  }
+}
 
 
 /*konten*/

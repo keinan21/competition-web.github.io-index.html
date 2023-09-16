@@ -1466,14 +1466,14 @@ li.timeline-item::before {
 }
 
 .aks-accordion {
-  width: 50%;
+  width: 100%;
   margin:auto;
   margin-left: 0px;
 }
 .aks-accordion-row {
 }
 .aks-accordion-item {
-  width: 200%;
+  width: 100%;
   border-bottom: 1px solid #e0e0e0;
   padding-top: 20px;
   padding-right: 5px;
@@ -1490,7 +1490,7 @@ li.timeline-item::before {
   width: 25px;
   height: 25px;
   background: #252525;
-  border-radius: 9999px;
+  border-radius: 2rem;
   cursor: pointer;
   user-select: none;
   display: flex;

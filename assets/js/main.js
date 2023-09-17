@@ -74,7 +74,7 @@ $(window).ready(function() {
 $('.btn-21').click(function(event) {
   event.preventDefault();
   var n = $(document).height();
-  $('html, body').animate({ scrollTop: 650 }, 50);
+  $('html, body').animate({ scrollTop: 650 }, 500);
 });
 
 

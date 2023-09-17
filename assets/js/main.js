@@ -34,16 +34,17 @@ $(window).ready(function() {
 });
 
 
-
 $(window).ready(function() {
     var width = $(window).width();
     if (width < 750){
       $('#sidebar').addClass("mobile");
       $('#konten').addClass("mobile");
+      $('#tanda').addClass("mobile");
     }
     else {
       $('#sidebar').removeClass("mobile");
       $('#konten').removeClass("mobile");
+      $('#tanda').removeClass("mobile");
     }
 });
 
